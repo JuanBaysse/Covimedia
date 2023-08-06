@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>WEB AGENCY</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/c85578ddc9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="navbar">
+    <div class="container">
+      <div class="content">
+        <div class="brand">
+          <img src="image/logo.png" alt="COVI MEDIA Logo" style="height: 60px;width: 240px;">
+        </div>
+        <nav>
+          <ul id="menuitem">
+            <li><a href="#about">About Us</a></li>
+            <li><a  href="#service">Services</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+      <div class="home flex">
+        <div class="left">
+          <h1>UNLEASH THE POWER <br>
+            OF YOUR CONTENT</h1>
+          <p>We are not your ordinary video agency. At COVI.MEDIA, we are on a mission to elevate your vision and propel your brand to new heights in the digital realm. Our passion lies in creating mesmerizing videos that not only narrate your story but also captivate and connect with your audience on a deeper level.</p>
+          <a  class="btn" href="#calendlyWidget" onclick="toggleCalendlyWidget()">START NOW</a>
+        </div>
+        <div class="right">
+          <img src="image/home.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+ 
+  <section id="service" class="service top center padding service2">
+    <div class="container">
+      <h1>Our Services</h1>
+      <div class="items1 grid">
+        <div class="box">
+          <img src="image/img1.png" />
+          <h3>ADVANCED</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />VIDEO EDITING&nbsp;&nbsp;  </li>
+            <li><img src="image/x.png" />AUTOMATION &nbsp &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li> <img src="image/x.png" />COVER DESIGN&nbsp; &nbsp; </li>
+            <li> <img src="image/x.png" />FEATURED DESIGN&nbsp;</li>
+          </ul>
+          <br>
+        </div>
+
+        <div class="box">
+          <img src="image/img2.png" />
+          <h3>ELITE</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />VIDEO EDITING&nbsp;&nbsp;  </li>
+            <li><img src="image/tilde.png" />AUTOMATION &nbsp &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li> <img src="image/x.png" />COVER DESIGN&nbsp; &nbsp; </li>
+            <li> <img src="image/x.png" />FEATURED DESIGN&nbsp;</li>
+          </ul>
+          <br>
+        </div>
+        <div class="box">
+          <img src="image/img3.png" />
+          <h3>MASTER</h3>
+          <br>
+          <ul>
+            <li><img src="image/tilde.png" />VIDEO EDITING&nbsp;&nbsp;  </li>
+            <li><img src="image/tilde.png" />AUTOMATION &nbsp &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li> <img src="image/tilde.png"  />COVER DESIGN&nbsp; &nbsp; </li>
+            <li> <img src="image/tilde.png" />FEATURED DESIGN&nbsp;</li>
+          </ul>
+          <br>
+        </div>
+      </div>
+      <p>video agency that goes beyond just video editing. We are here to take your vision to new heights and help you flourish in the digital realm. At COVI.MEDIA, we specialize in crafting captivating videos that not only tell your story but also engage and resonate with your audience.</p>
+      <a  class="btn" href="#calendlyWidget" onclick="toggleCalendlyWidget()">START NOW</a>
+      <br>
+      <br>
+      <!-- Div oculto inicialmente -->
+      <div id="calendlyWidget" class="calendly-inline-widget" data-url="https://calendly.com/juanbaysse/uvavision?hide_gdpr_banner=1" style="display: none; min-width: 320px; height: 630px;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+      
+      <script>
+        function toggleCalendlyWidget() {
+          var calendlyWidget = document.getElementById('calendlyWidget');
+          if (calendlyWidget.style.display === 'none') {
+            calendlyWidget.style.display = 'block';
+          }
+        }
+      </script>
+
+    </div>
+  </section>
+  <section class="wrapper top">
+    <div class="container flex">
+      <div class="left">
+        <img src="image/a.png" alt="">
+      </div>
+      <div class="right ">
+        <h1>COVI.PARTNERS</h1>
+        <p>Introducing COVI.PARTNERS! Our affiliate program at COVI.MEDIA offers cumulative discounts on our services. For every referred client, you'll receive a 5% discount on your own service. Save while sharing solutions with your network of contacts!
+
+          Join COVI.PARTNERS today and take advantage of the benefits.</p>
+        <a class="btn"  href="#calendlyWidget" onclick="toggleCalendlyWidget()">START NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="service top center padding service2">
+    <h1>Why Choose Us</h1>
+    <div class="items grid">
+      <div class="box">
+        <img src="image/img10.png" />
+        <h3>INMERSIVE EXPERIENCIES</h3>
+        <p>Experience immersive storytelling with us. Our cutting-edge technologies create captivating experiences that leave a lasting impact on your audience.</p>
+      </div>
+      <div class="box">
+        <img src="image/img9.png" />
+        <h3>PERSONALIZED SOLUTIONS</h3>
+        <p>Your vision, our priority. We tailor our services to fit your unique needs, ensuring that every video reflects your brand identity and message.</p>
+      </div>
+      <div class="box">
+        <img src="image/img6.png" />
+        <h3>SEAMLESS COLLABORATION</h3>
+        <p>Work with a team that becomes an extension of yours. We collaborate closely to understand your goals and deliver videos that exceed expectations.</p>
+      </div>
+      <div class="box">
+        <img src="image/img7.png" />
+        <h3>PROMPT DELIVERY</h3>
+        <p>Time is of the essence. Our efficient workflow ensures timely delivery of your videos, so you can launch your campaigns without delay.</p>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="wraper2 top">
+    <div class="container flex">
+      <div class="left ">
+        <h2>Unleashing Creative Excellence:  <br> COVI.MEDIA</h2>
+        <p>Experience the brilliance of COVI.MEDIA, where creativity knows no bounds. We breathe life into visual storytelling, crafting unforgettable moments for you and your audience. Join our journey and let your ideas soar with COVI.MEDIA.</p>
+        <a href="#team" class="btn">Explore Our Team</a>
+      </div>
+      <div class="right">
+        <img src="image/uvaa.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact top">
+    <div class="container">
+      <div class="content flex">
+        <div class="left">
+          <form action="https://formsubmit.co/38ad21fba193e4830db83570282d26af" method="POST" >
+            <h1>Contact Us</h1>
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="text" name="phone" placeholder="Phone Number">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" rows="5" cols="80">Message</textarea>
+            <button type="submit" class="btn" value="Enviar">SEND</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
+          </form>
+        </div>
+        <div class="right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d252578.37384408266!2d-58.4173094!3d-34.6117643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1630635361948!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>     
+      </div>
+    </div>
+  </section>
+
+
+  <section id="team"  class="cutsomer top">
+    <div class="container">
+      <h1 class="center">Our Team</h1>
+      <div class="itme grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/c1.jpg" alt="">
+          </div>
+          <div class="text">
+            <p> is our talented and meticulous video editor, with a passion for bringing stories to life through captivating visuals.</p>
+            <h3>Ander Alex</h3>
+            <span>Santiago,Chile</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://lh3.googleusercontent.com/a-/AD_cMMQAugZkRScOfPiXiyAnoXq9kE2XfzUAR2Nw730fKmMXR9c=s64-p-k-rw-no" alt="">
+          </div>
+          <div class="text">
+            <p>is our talented and Head of Video Editing, is the heart and soul of our agency. With an innate passion for video editing</p>
+            <h3>Covini Nicolas</h3>
+            <span>Argentina</span>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/c3.jpg" alt="">
+          </div>
+          <div class="text">
+            <p>is our talented and dedicated Video Editor, Jose, is an essential part of our creative team. With years of experience in video editing</p>
+            <h3>Fernandez Alejandro</h3>
+            <span>Argentina,Jujuy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container top grid">
+      <div class="box">
+        <h2>Address</h2>
+        <i class="fa fa-map"></i>
+        <label>Argentina,Buenos Aires</label><br>
+        <i class="fa fa-phone"></i>
+        <label>Call +54 38644573</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>Nico@CoviMedia.com</label><br>
+      </div>
+      <div class="box">
+        <h2>Info</h2>
+        <p>We take pride in offering creative and professional solutions in the world of video editing and content production.</p>
+      </div>
+      <div class="box">
+        <h2>Links</h2>
+        <a href="https://www.tiktok.com/@Covi.media"  style="color: #fafafa;" ><i class="fa-brands fa-tiktok" style="color: #fafafa;"></i>&nbspTiktok</a>
+        <br>
+        <a href="https://www.instagram.com/Covi.media"  style="color: #fafafa;" ><i class="fa-brands fa-instagram" style="color: #fafafa;"></i>&nbspInstagram</a>
+        <br>
+        <span><i class="fa-brands fa-linkedin" style="color: #fafafa;"></i>&nbspLinkedin</span>
+      </div>
+      <div class="box">
+        <h2>Subscribe</h2>
+        <form action="https://formsubmit.co/38ad21fba193e4830db83570282d26af" method="POST" >
+        <input type="email" name="email" placeholder="Enter Your Email">
+        <input type="submit" class="btn" placeholder="SEND">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2023 Copyright  All Rights Reserved  </p>
+  </footer>
+</body>
+
+</html>
